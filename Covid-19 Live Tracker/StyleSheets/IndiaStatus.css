@@ -1,0 +1,189 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: black;
+}
+#container{
+	margin:0 auto;
+	width:100%;
+	overflow:hidden;
+	background-color: black;
+}
+.div-graph
+{
+	margin-left:auto;
+	margin-right:auto;
+	width: 90%;
+	height:800px;
+	padding-top:10px;
+}
+@media (min-height:700px)
+{
+	.div-graph
+	{
+		height:1200px;
+	}
+	g text[x="227"]
+	{
+		font-size:25px;
+	}
+	g text
+	{
+		font-size:20px;
+	}
+}
+section.sec-container{
+	margin:20px auto;
+	width:85%;
+	overflow:hidden;
+	background-color: black;
+}
+div.table-container
+{
+	width: 100%;
+	height: 900px;
+	overflow-y: auto;
+}
+table
+{
+	margin:0 auto;
+	width:100%;
+	overflow:auto;
+	font-family: helvetica,arial,sans-serif;
+	font-size:14px;
+	color:#333333;
+	text-align: center;
+	border-spacing: 20px;
+}
+table.state-table thead .heading
+{
+	font-size:18px;
+}
+table.state-table thead .heading i
+{
+	margin-left:5px;
+	font-size: 18px;
+}
+table.state-table tr.breakrow:hover{
+	border: 1px solid white;
+}
+div.sub-container
+{
+	width: 50%;
+}
+table.child
+{
+	border-spacing: 15px;
+	width: 100%;
+}
+table.state-table th,tr.breakrow td{
+	padding:15px 0px;
+	text-align: center;
+	color: black;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: x-large;
+}
+table.state-table th
+{
+	background-color: #54d18b;
+	color: black;
+	position: sticky;
+	top:-1px;
+	padding:18px 0px;
+	cursor:pointer;
+}
+table.state-table tfoot th
+{
+	position: sticky;
+	bottom: -3px;
+}
+table.state-table tr.datarow{
+	display: none;
+}
+table.child td
+{
+	margin: 2px auto;
+	text-align: center;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: x-large;
+	padding:5px 0px;
+	width:50%;
+}
+.breakrow
+{
+	cursor:pointer;
+}
+.breakrow:hover td
+{
+	background-color:gray;
+}
+th.sign,td.sign
+{
+	background-color: black!important;
+	border-radius: 0px!important;
+}
+.breakrow:hover td
+{
+	background-color:#f1c6c6;
+}
+
+table.child tbody tr:nth-child(even) td { background: #cfe2fe; }   
+tbody tr:nth-child(odd) td { background: whitesmoke; }
+
+
+/*******Search Box Css*********/
+.searchcontainer
+{
+    width: 80%;
+    margin:20px auto ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchcontainer input[type=text]
+{
+    padding: 15px 40px 15px 20px;
+    width: 20px;
+    color: #525252;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
+    outline: none;
+    margin-left: 0px;
+}
+  
+.searchcontainer input[type=text]:focus{
+     width: 300px; 
+}
+.searchcontainer i
+{
+    position: relative;
+    top:15px;
+    right:20px; 
+    color: #8233C5
+}
+.searchcontainer .search-area
+{
+    float: left;
+    position:relative;
+}
+.search-area:hover input[type=text]
+{
+    width:300px;
+}
+  

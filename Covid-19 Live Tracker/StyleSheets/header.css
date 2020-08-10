@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish');
+.header,.header_navbar,a
+{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+
+/*========= Scrollbar Css ========*/
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+/*=================================*/    
+
+.logo
+{
+  color: white;
+  left: 10px;
+  bottom: 10px;
+  margin-top: 10px;
+  text-align:center;
+  padding:17px 0px;
+  line-height: 1;
+  font-family: 'Stylish';
+  font-size: 50px;
+  font-weight:bolder;
+  word-spacing:-4px;
+}
+.logo p
+{
+  margin-bottom:0px;
+}
+.topnav 
+{
+  
+  overflow: hidden;
+  background-color: black;
+  padding-right:5px;
+  padding-left:5px;
+  border-bottom:1px solid white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color:white;
+  border:1px solid transparent;
+  margin-top:10px;
+  padding: 5px 12px;
+  text-decoration: none;
+  font-size: 30px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  width:25%;
+  text-align:center;
+}
+
+.topnav a:hover {
+    border:1px solid white;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+/*
+.logo
+{
+  color: white;
+  left: 10px;
+  bottom: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align:center;
+}
+.topnav 
+{
+  
+  overflow: hidden;
+  background-color: black;
+  padding-right:10px;
+  border-bottom:1px solid white;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color:white;
+  border:1px solid transparent;
+  margin-top:10px;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+
+.topnav a:hover {
+    border:1px solid white;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/*@media screen and (max-width: 900px) {
+    .topnav a:hover {
+      border:1px solid transparent;
+  }
+  .topnav a:not(:first-child) 
+  {
+    display: none;
+  }
+  .topnav a.icon 
+  {
+    float: right;
+    display: block;
+    font-size:35px;
+  }
+  .topnav.responsive 
+  {
+    position: relative;
+  }
+  .topnav.responsive .icon 
+  {
+    position: absolute;
+    right: 0px;
+    top: -10px;
+  }
+  .topnav.responsive a 
+  {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-left:10px;
+  }
+}*/

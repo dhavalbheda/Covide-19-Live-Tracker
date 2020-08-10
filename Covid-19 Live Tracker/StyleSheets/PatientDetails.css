@@ -1,0 +1,457 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{background-color: black;}
+.content-wrapper
+{
+    width:100%;
+}
+.main-content-box
+{
+    height:auto;
+    width:100%;
+    display:flex;
+}
+.parent-card
+{   
+    width:48%;
+    margin:15px auto;
+    height:auto;
+    color:white;
+    border-radius:10px;
+    padding:10px;
+    font-size:35px;
+    overflow:auto;
+    -webkit-box-shadow: 0 -1px 20px rgb(116, 107, 107);
+    -moz-box-shadow: 0 -1px 20px #fff;
+    box-shadow: 0 -1px 20px rgb(116, 107, 107);
+}
+#patient_number_container
+{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin-top:15px;
+}
+input[type=number]
+{
+    font-size:22px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bolder;
+    width:90%;
+    border:1px solid seagreen;
+    border-radius: 10px;
+    padding:10px;
+    outline:0;
+}
+.patient_header
+{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top:20px;
+}
+.patient_number_text
+{
+    font-size:28px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.patient_logo
+{
+    display: flex;
+    justify-content: center;
+}
+.patient_logo i
+{
+    padding:13px 20px;
+    border-radius:100%;
+    font-size:50px;
+}
+.patient_logo i.fa.fa-male
+{
+    width:70px;
+    height:70x;
+    text-align: center;   
+    padding-top: 8px;
+}
+.child-cards
+{
+    display:flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    width:100%;
+    padding-top:20px;
+}
+.card
+{
+    width:28%;
+    height:150px;
+    margin:10px 0px;
+    text-align:center;
+    font-size:25px;
+    border-radius:10px;
+    background-color: pink;
+    padding:5px;
+}
+.card .card-heading
+{
+    height:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    font-size:20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+.card .card-value
+{
+    height:70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:22px;
+    font-weight:600;
+    word-break: break-all;
+    -ms-word-break: break-all;
+}
+.age
+{
+    background-color: #f6ff67;
+    color:black;
+}
+.age .card-value
+{
+    font-family:sans-serif;
+    font-size:25px;
+}
+.state 
+{
+    background-color:#beebe9;
+    color:black;
+}
+.district{  background-color:#e8ad5b }
+.hospitalized{background-color:#ff9800;}
+.recovered{background-color: #21bf73;}
+.death{background-color: rgb(255, 23, 23);}
+.date{background-color: steelblue;}
+.gender
+{
+    background-color:rgb(241, 197, 197);
+    color:#204051;
+}
+.detail
+{
+    background-color: #CDDC39;
+    color:black;
+}
+.detail .card-value
+{
+    padding-left:2px;
+    text-align:left;
+    justify-content: flex-start;
+    font-size:20px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.source1{background-color:#26A69A;}
+.source2{background-color: #607d8b;}
+.source3{background-color: #b0bec5; color:black}
+.source1 .card-value a,.source2 .card-value a,.source3 .card-value a
+{
+    text-decoration:none;
+    color:white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.fullwidth
+{
+    width:100%;
+}
+.smallheight
+{
+    height:130px;
+}
+/****** Fliter Block CSS *********/
+#state-field-autocomplete-list,#district-field-autocomplete-list
+{
+    border-width:0px;
+}
+div.search-area
+{
+    padding:15px 0px;
+    overflow:auto;
+}
+div.search-state,div.search-district
+{
+    margin: 0px auto;
+    width: 50%;
+    float: left;
+    display:inline-block ;
+    text-align: center;
+}
+.state-field
+{
+    padding: 15px;
+    height: 30px;
+    width: 220px;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,.15);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline:0;
+}
+.autocomplete-items div
+{
+    font-size: 18px!important;
+    color: black;
+    font-weight: 560;
+    border-radius: 10px;
+    height: 40px;
+    padding:10px;
+    margin-top: 3px;
+    font-family: sans-serif;
+    background-color: #eeeeee;
+}
+.autocomplete-items
+{
+    border: none;
+    width: 90%;
+    margin-top: 30px;
+}
+.autocomplete-active
+{
+    background-color:#a5d6a7!important;
+    font-weight: 700!important;
+}
+div.detail-area
+{
+    margin-top:15px;
+    margin-bottom:15px;
+    width:100%;
+}
+div.case-description
+{
+    width:100%;
+    margin:5px auto 20px auto;
+}
+div.case-description p
+{
+    font-size: 25px;
+    color: #fac481;
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: 600;
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 2px;  
+}
+p.total-detail-label
+{
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    letter-spacing: 1px;
+}
+div.case-list-container
+{
+    width: 85%;
+    height: 800px;
+    overflow-y: auto;
+    margin: 10px auto 0px auto;
+    
+}
+ul.case-list
+{
+    color:white;
+    width:100%;
+    margin:10px auto 0px auto;
+    border:1px solid white;
+}
+li
+{
+    border: 1px solid white;
+    list-style: none;
+    padding: 0px 10px;
+    font-weight:bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: black;
+}
+li:nth-child(2)
+{
+    border:1px solid white;
+    position:sticky;
+    top:0px;
+    z-index:1;
+}
+li h6
+{
+    text-align: center;
+    padding:10px 0px;
+}
+
+span.case-number
+{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    border-right: 1px solid white;
+    padding: 10px 0px;
+}
+span.case-det-link
+{
+    font-size: 18px;
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-top:15px;
+}
+.case-det-link p
+{
+    display:inline;
+    padding:0px 10px;
+    font-size:19px;
+    margin: 0px auto;
+    background-color:blue;
+    text-decoration:underline;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+@media screen and (max-width:999px)
+{
+    .logo
+    {
+        font-size:45px;
+        padding:0px;
+    }
+    .topnav a
+    {
+        padding: 3px 0px;
+        width: 25%;
+        text-align: center;
+        font-size: 17px;
+    }
+    .main-content-box
+    {
+        display:block;
+    }
+    .parent-card
+    {
+        clear:left;
+        width:95%;
+        padding-top:20px;
+    }
+    .parent-card:nth-child(2)
+    {
+        margin-top:20px;
+    }
+    .child-cards
+    {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .logo
+    {
+        font-size:15px;
+        padding:0px;
+    }
+    .topnav a
+    {
+        padding: 3px 0px;
+        width: 25%;
+        text-align: center;
+        font-size: 11px;
+    }
+    input[type=number]
+    {
+        width:90%;
+    }
+    .child-cards
+    {
+        justify-content:space-around;
+    }
+    .age,.gender,.status,.date,.state,.district
+    {
+        width:45%;
+    }
+    .detail
+    {
+        height:150px;
+    }
+    .detail .card-value,.source1 .card-value,.source2 .card-value,.source3 .card-value
+    {
+        letter-spacing:0px;
+        width:100%;
+        overflow:auto;
+    }
+    .date .card-heading
+    {
+        font-size:17px;
+    }
+
+    /*****Fliter Block****/
+    
+    div.case-list-container
+    {
+        height:510px;
+    }
+    span.case-det-link
+    {
+        margin-top:10px;
+    }
+    span.case-det-link p
+    {
+        font-size:12px;
+    }
+    span.case-number
+    {
+        font-size:18px;
+    }
+    div.search-state,div.search-district
+    {
+        width:100%;
+        margin-bottom:20px;
+    }
+    li h6
+    {
+        font-size:22px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .topnav a
+    {
+        font-size: 10px;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.detail .card-value::-webkit-scrollbar,div.case-list-container::-webkit-scrollbar {
+    width: 0px;   
+}

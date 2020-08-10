@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.main
+{
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    background-color: black;
+}
+header
+{
+    border-bottom: 2px solid white;
+    color: red;
+    width: 100%;
+    padding: 10px 10px;
+}
+section.indianData,section.worldData
+{
+    margin:20px  auto;
+    width: 50%;
+    padding:10px;
+    background-color: black;
+}
+span.popup
+{
+    border-radius: 20px;
+     background-color: red;
+     color: white;
+     padding: 0px 4px;
+     font-size: 16px;
+}
+p.heading
+{
+    padding: 3px 0px;
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+    background-color: lightblue;
+    font-family: 'Headland One', serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+p.last-update-india-time,p.last-update-worldCase-time
+{
+    display:block;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:white;
+    margin:10px 0 5px 0;
+	font-weight:bold;
+	letter-spacing:1px;
+}
+div.india-status,div.world-status
+{
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+}
+hr.hr-status
+{
+    border-radius:20px;
+    margin:0px auto;
+    background-color: darkolivegreen; 
+    height:2px;
+    width: 50%;
+}
+div.india-status,div.world-status 
+{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+div.india-status,div.world-status div
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.total-status p
+{
+    color:whitesmoke;
+    font-size: 2em;
+}
+div.active-status p
+{
+    color: #0400ff;
+    font-size: 1.7em;
+}
+div.recovered-status p
+{
+    color:#00fa00;
+    font-size: 1.7em;
+}
+div.death-status p
+{
+    color:red;
+    font-size: 1.7em;
+}
+section.sec-world-table
+{
+    margin:20px auto;
+    width: 80%;
+    padding: 5px;
+}
+div.div-country-table
+{
+    overflow-y: auto;
+    height: 900px;
+    width: 100%;
+    margin:0 auto ;
+}
+p#table-detail
+{
+    font-size: 22px;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+table.country-table
+{
+    font-size: x-large;
+    background-color:#fffcfc;
+    color: black;
+    background-color: black;
+    border-spacing: 10px;
+    border-collapse: separate;
+    width: 100%;
+    margin:0px auto;
+}
+th,td
+{
+    font-family: helvetica,arial,sans-serif;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px  5px;
+    text-align:center;
+    width:20px;
+    border-radius: 20px;
+    font-weight:bold;
+}
+
+th
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #54d18b;
+    position: sticky;
+    top:-3px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+tbody tr:nth-child(even) td { background: #cfe2fe; }   
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tbody tr:nth-child(odd) td { background: whitesmoke; }
+
+tfoot tr td
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #54d18b;
+    position: sticky;
+    bottom:-1px;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 75px;
+}
+
+/*========= Scrollbar Css ========*/
+::-webkit-scrollbar {
+    width: 10px;
+    height:10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+/*=================================*/   
+
+.searchcontainer
+{
+
+    width: 80%;
+    margin:20px auto ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+input[type=text]{
+    padding: 15px 40px 15px 20px;
+    width: 20px;
+    color: #525252;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
+    outline: none;
+    margin-left: 0px;
+}
+  
+input[type=text]:focus{
+     width: 300px; 
+}
+i
+{
+    position: relative;
+    top:15px;
+    right:20px; 
+    color: #8233C5
+}
+.search-area
+{
+    float: left;
+    position:relative;
+}
+.search-area:hover input[type=text]
+{
+    width:300px;
+}
+.sort-sign
+{
+    position:relative;
+    top:0px;
+    left:7px;
+    color:black;
+}
+/* tooltip */
+.introjs-overlay 
+{
+    background-color: #9e9e9e;
+}
+.introjs-tooltip
+{
+    background-color: #f2f2f2;
+    color: #283593;
+    font-weight: 550;
+    font-family: sans-serif;
+    word-spacing: 3px;
+    font-size:22px;
+}
+.introjs-button
+{
+    font-size:20px;
+}
+.introjs-helperLayer
+{
+    background-color:#ff4949;
+}
+
+/* logo and how to use */
+.how_to_use
+{
+    position: absolute;
+    top: 28px;
+    right: 25px;
+    display: inline-block;
+    width: 16%;
+    padding:4px 0px;
+    float: right;
+    text-align: center;
+    font-size: 22px;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    border-radius: 6px;
+    margin-top: 10px;
+    outline: 0;
+    word-spacing: 2px;
+	letter-spacing:1px;
+}

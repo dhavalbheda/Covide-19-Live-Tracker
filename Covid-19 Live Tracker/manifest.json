@@ -1,0 +1,50 @@
+{
+    "name":"COVID19 Tracker\nMade In India",
+    "short_name":"COVID19 Tracker",
+    "start_url":"./index.html",
+    "display":"standalone",
+    "background_color":"black",
+    "theme_color":"#FFE1C4",
+    "icons":[
+		{
+            "src":"./img/img512.png",
+            "type":"image/png",
+            "sizes":"512x512"
+        },
+        {
+            "src":"./img/img72.png",
+            "type":"image/png",
+            "sizes":"72x72"
+        },
+        {
+            "src":"./img/img96.png",
+            "type":"image/png",
+            "sizes":"96x96"
+        },
+        {
+            "src":"./img/img128.png",
+            "type":"image/png",
+            "sizes":"128x128"
+        },
+        {
+            "src":"./img/img144.png",
+            "type":"image/png",
+            "sizes":"144x144"
+        },
+        {
+            "src":"./img/img152.png",
+            "type":"image/png",
+            "sizes":"152x152"
+        },
+        {
+            "src":"./img/img192.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        },
+        {
+            "src":"./img/img384.png",
+            "type":"image/png",
+            "sizes":"384x384"
+        }        
+    ]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>India Status</title>
+	<link rel="icon" href ="img/companylogo.ico" sizes="80x80" type="image/x-icon">
+	
+    <link rel="manifest" href="./manifest.json">
+    <script src="./Scripts/app.js"></script>
+    <meta name="theme-color" content="#FFE1C4">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="apple-mobile-web-app-status-bar" content="#aa7700">
+	<link rel="apple-touch-icon" href="./img/img96.png">
+   `<link rel="apple-touch-startup-image" sizes="1792x828" href="./img/iphone11.png">
+	<link rel="apple-touch-startup-image" sizes="2048x2732" href="./img/ipad_pro_129.png">
+	<link rel="apple-touch-startup-image" sizes="1668x2224" href="./img/ipad_pro_105.png">
+	<link rel="apple-touch-startup-image" sizes="1536x2048" href="./img/ipadmini4.png">
+	<link rel="apple-touch-startup-image" sizes="1125x2436" href="./img/iphonex.png">
+	<link rel="apple-touch-startup-image" sizes="1242x2208" href="./img/iphone6s_plus.png">
+	<link rel="apple-touch-startup-image" sizes="750x1334" href="./img/iphone6s.png">
+	<link rel="apple-touch-startup-image" sizes="640x1136" href="./img/iphoneSE.png">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./Scripts/IndiaStatus.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@800&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./StyleSheets/header.css"/>
+    <link rel="stylesheet" href="./StyleSheets/IndiaStatus.css"/>
+    <link rel="stylesheet" href="./StyleSheets/footer.css"/>
+</head>
+
+<body onload="init()">
+    <div class="logo"><p>
+			  <span class="logo" style='color: #64B5F6'>C</span>
+			  <span class="logo" style='color: red'>O</span>
+			  <span class="logo" style='color: yellow'>V</span>
+			  <span class="logo" style='color: #64B5F6'>I</span>
+			  <span class="logo" style='color: green'>D</span>
+			  <span class="logo" style='color: white'>-</span>
+			  <span class="logo" style='color: red'>19</span>
+			</p></div>
+    <div class="topnav" id="myTopnav">
+            <a href="./WorldMap.html">World Map</a>
+            <a href="./PatientDetails.html">Patient Details</a>
+            <a href="./IndiaStatus.html"  class="active">India Status</a>
+            <a href="./index.html"  >OverAll Details</a>
+    </div>
+    <div class="container" id="container">
+		<section class="stateGraph">
+			<div class="div-graph" id="div-graph">
+			</div>
+        </section> 
+        
+        <section class="sec-container">
+				<div class="searchcontainer">
+				<span class="search-area">
+					<input placeholder='Search...' id="search-input" onkeyup="searchStateDistrict(this.value.toUpperCase())" type="text">
+					<i style="position:absolute" class="fa fa-search"></i>
+				</span>
+			</div>
+
+            <div class="table-container">
+                <table class="state-table" id="state-table" >
+                </table>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3><span>AD</span>&nbsp;Devlopment</h3>   
+
+            <p class="footer-company-name">Developed By : </p>
+            <p class="dev-name">DHAVAL BHEDA</p>
+            <p class="dev-name">AMAN KAMANI</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Rajkot</span>Gujarat</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">amankamaniak@gmail.com</a></p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">dhavalbhedadb@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+			<p class="footer-company-about">
+				<span>About the Website</span>
+				This is a visualization of the Covid-19 (Coronavirus) pandemic by India and also in World.
+			</p>
+			<p class="whatsapp_share">
+				<span>Share On </span>
+				<a target="_blank" href="whatsapp://send?text=This live tracker is useful to track the cases of Coronavirus (COVID-19) in India and across the World. For more information  Visit: www.covid19out.ml and spread the words with your friends and family! #stayhomestaysafe">
+					<i class="fa fa-whatsapp"></i>
+				</a>
+			</p>
+		</div>
+    </footer>
+</body>
+</html>
