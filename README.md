@@ -8,3 +8,4 @@
 * Its Also Provide Indian Patient Details Like Patient Age, Gender, Which State And District, Current Status(Hospitalized,Recovered,Death), Also How He/She Got The Disease. 
 
 * This Site Shows You Live Visualization Of COVID-19 Across The World And Also How This Disease Is Spreading.
+https://dhavalbheda.github.io/Covide-19-Live-Tracker/Covid-19%20Live%20Tracker/
